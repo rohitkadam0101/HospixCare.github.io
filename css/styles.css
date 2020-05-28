@@ -4,8 +4,24 @@
     box-sizing: border-box;
     
 }
+html{
+    scroll-behavior: smooth;
+}
+/*Scrollbar*/
+*::-webkit-scrollbar {
+  width: 24px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #0cb8b6;
+  border-radius: 70px;
+  border: 3px solid #0cb8b6;
+}
+
 body{
-    font-family: 'Baloo Thambi 2', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 a{
     text-decoration: none;
@@ -14,6 +30,16 @@ li{
     list-style: none;
     overflow: hidden;
     display: inline;
+}
+/*Loader */
+#loading {
+    height: 100vh;
+    width: 100%;
+    background: #fff url('img/Dual%20Ring-0.6s-107px.gif') no-repeat center;
+    position: fixed;
+    z-index: 9999999;
+ 
+    
 }
 .header{
     width: 100%;
@@ -119,7 +145,7 @@ li{
 }
 .header-buttons a{
     border: 1px solid rgb(12,184,182);
-    padding: 8px 40px;
+    padding: 14px 42px;
     margin: 0 14px;
     outline: none;
     background-color: rgb(12,184,182);
@@ -375,11 +401,152 @@ background: linear-gradient(to right, #514A9D, #24C6DC);
 }
 .departments-cards{
     height: 270px;
-    margin-bottom: 40px;
-
-    
+    margin-bottom: 40px;    
 }
 
+.departments-cards:hover{
+    transform: scale(1.1);
+}
+
+
+/*Carousel Section */
+.carousel{
+    margin: 80px 0;
+    background-color: rgb(29, 34, 29);
+}
+.carousel-inner img{
+    height: 600px;
+}
+.review-inner{
+    height: 300px;
+}
+.carousel-caption{
+    top: 50%;
+    padding-top: 100px;
+}
+.review-para{
+    font-size:20px;
+}
+.review-names{
+    text-transform: uppercase;
+}
+/*Special */
+
+#specialimg{
+    width: 100%;
+    height: 100%;
+}
+.half-txt{
+    background: #2193b0;  /* fallback for old browsers */
+    background: linear-gradient(to right, #6dd5ed, #2193b0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 4em;
+
+}
+.first{
+    padding-bottom: 60px;
+}
+.heading_special{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+}
+.para-special{
+    color: white;
+}
+.subicons{
+    color: white;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.subtextspecial{
+    text-transform: uppercase;
+    font-size: 25px;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 7px;
+}
+.half-img{
+    padding: 0;
+}
+/*Footer*/
+footer{
+    background-color: #325c6a;
+    color: white;
+    margin-top: 65px;
+}
+.footer-area{
+    padding: 30px 10px;
+}
+.footlist a{
+    color: white;
+    text-decoration: none;
+    
+}
+.logo-area-footer{
+    padding-right: 50px;
+}
+.footlist a:hover{
+    color: black;
+}
+.footli{
+    display: block;
+    list-style: circle;
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-top: 12px;
+}
+
+
+.footer-para{
+    padding: 20px 0;
+    margin-right: 20px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.footer-icons{
+    font-size: 35px;
+    color: white;
+}
+.quick-links{
+    padding-left: 35px;
+    
+}
+.link-header h2{
+    font-size: 35px;
+    
+}
+.adress-heading h2{
+    font-size: 35px;
+}
+.adress-para{
+    font-size:20px;
+    letter-spacing: 1px;
+    padding-top: 12px;
+}
+.eme{
+    text-transform: uppercase;
+    font-size: 20px;
+    padding-top: 20px;
+}
+.credits{
+    background-color:darkcyan;
+}
+.credit-heading{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+}
+/*Scrollbar*/
 
 
 /*Animations*/
