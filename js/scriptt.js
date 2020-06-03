@@ -3,6 +3,7 @@ var preloader = document.getElementById("loading");
 function myFunction(){
     preloader.style.display= "none";
 }
+//Loader
 preloader.display = "none"
 $(window).scroll(function(){
 	$('nav').toggleClass('scrolled', $(this).scrollTop() >100);
@@ -19,5 +20,3 @@ $(".counter").counterUp({
 $('.carousel').carousel({
   interval: 4000,
 })
-
-//for loader
