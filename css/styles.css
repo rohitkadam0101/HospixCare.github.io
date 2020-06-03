@@ -222,6 +222,7 @@ li{
 .services-card{
     margin-bottom: 40px;
     transition: all 0.3s;
+    height: 400px;
 }
 .services-card:hover .services-icons
 {
@@ -237,6 +238,7 @@ li{
     margin-bottom: 40px;
     position: relative;
     transition: all 0.5s;
+    height: 530px;
 }
 
 .fab{
